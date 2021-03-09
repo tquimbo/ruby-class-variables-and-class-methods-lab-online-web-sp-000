@@ -20,13 +20,13 @@ def self.count
 return @@count
 end
 
-def self.genres(genre)
+def self.genres
 
 @@genres.uniq
 return @@genres
 end
 
-def self.artists(artist)
+def self.artists
 @@artist.uniq
 return @@artists
 end
