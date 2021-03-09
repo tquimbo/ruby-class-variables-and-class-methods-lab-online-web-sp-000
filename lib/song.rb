@@ -23,11 +23,13 @@ end
 def self.genres
 
 unless genres.include?(genres)
+  @@genres << genre
 return @@genres
 end
 
 def self.artists
 unless artists.include?(artist)
+  @@artists << artist
 return @@artists
 end
 
