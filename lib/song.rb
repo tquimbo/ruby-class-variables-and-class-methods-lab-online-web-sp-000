@@ -37,7 +37,7 @@ def self.genre_count
 #check if the hask already contains key of a particuar genre
 #if it has increment key by 1, if not create a new key value pair
 genre_count = {}
-@@genres.each do |genre|
+@@genres.uniq.each do |genre|
 genre_count[genre] = [genre].count
 end
 return genre_count
