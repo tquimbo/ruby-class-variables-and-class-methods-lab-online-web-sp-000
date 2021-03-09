@@ -25,6 +25,7 @@ end
 
 def self.artists(artist)
 @@artists << self.artist
+return @@artists = []
 end
 
 def self.genre_count
