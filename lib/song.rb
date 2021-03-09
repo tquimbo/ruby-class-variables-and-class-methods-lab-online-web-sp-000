@@ -38,8 +38,8 @@ def self.genre_count
 #if it has increment key by 1, if not create a new key value pair
 binding.pry
 genre_count = {}
-@@genres.each do |genre, count|
-genre_count << genre[count]
+@@genres.each do |genre|
+genre_count[genre]
 end
 end
 
