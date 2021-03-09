@@ -22,12 +22,12 @@ end
 
 def self.genres(genre)
 
-
+@@genres.uniq
 return @@genres
 end
 
 def self.artists(artist)
-
+@@artist.uniq
 return @@artists
 end
 
