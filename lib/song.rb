@@ -19,11 +19,13 @@ return @@count
 end
 
 def self.genres(genre)
+  @@genres = []
 @@genres << self.genre
 return @@genres
 end
 
 def self.artists(artist)
+  @@artists = []
 @@artists << self.artist
 return @@artists
 end
