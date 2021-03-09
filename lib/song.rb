@@ -18,12 +18,12 @@ def self.count
 return @@count
 end
 
-def self.genres(self.genre)
-@@genres << genre
+def self.genres(genre)
+@@genres << self.genre
 end
 
-def self.artists(self.artist)
-@@artists << artist
+def self.artists(artist)
+@@artists << self.artist
 end
 
 def self.genre_count
