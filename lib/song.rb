@@ -27,7 +27,7 @@ return @@genres
 end
 
 def self.artists
-@@genres.artists!
+@@artists.uniq!
 return @@artists
 end
 
