@@ -32,10 +32,6 @@ return @@artists
 end
 
 def self.genre_count
-#iterate over an array
-#populate hash with key value pairs
-#check if the hask already contains key of a particuar genre
-#if it has increment key by 1, if not create a new key value pair
 genre_count = {}
 @@genres.each do |genre|
 if genre_count[genre]
@@ -49,7 +45,16 @@ end
 
 
 def self.artist_count
-artist_count = {}
+  genre_count = {}
+  @@genres.each do |genre|
+  if genre_count[genre]
+    genre_count[genre] += 1
+  else
+    genre_count[genre] = 1
+  end
+  end
+  return genre_count
+
 
 end
 
