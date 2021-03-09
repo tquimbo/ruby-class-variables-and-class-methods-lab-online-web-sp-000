@@ -22,7 +22,7 @@ end
 
 def self.genres
 #you operate on the genres array
-@@genres.uniq
+@@genres.uniq!
 return @@genres
 end
 
