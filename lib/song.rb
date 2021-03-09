@@ -41,6 +41,7 @@ genre_count = {}
 genre_count[genre] = @@genres.count
 end
 return genre_count
+binding.pry
 end
 
 def self.artist_count
