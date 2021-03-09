@@ -12,9 +12,7 @@ def initialize(name, artist, genre)
 self.name = name
 self.genre = genre
 self.artist = artist
-# unless @@genres.include?(genre)
 @@genres << genre
-# unless @@artists.include?(artist)
 @@artists << artist
 end
 
@@ -23,7 +21,8 @@ return @@count
 end
 
 def self.genres
-
+#you operate on the genres array
+@@genres.uniq
 return @@genres
 end
 
