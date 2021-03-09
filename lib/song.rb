@@ -22,12 +22,12 @@ end
 
 def self.genres
 
-@@genres.uniq
+unless genres.include?(genres)
 return @@genres
 end
 
 def self.artists
-@@artists.uniq
+unless artist.include?(artist)
 return @@artists
 end
 
