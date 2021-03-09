@@ -20,12 +20,12 @@ end
 
 def self.genres(genre)
 @@genres << self.genre
-return @@genres = []
+return @@genres
 end
 
 def self.artists(artist)
 @@artists << self.artist
-return @@artists = []
+return @@artists
 end
 
 def self.genre_count
