@@ -27,7 +27,7 @@ return @@genres
 end
 
 def self.artists
-unless artist.include?(artist)
+unless artists.include?(artist)
 return @@artists
 end
 
