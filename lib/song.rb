@@ -36,7 +36,6 @@ def self.genre_count
 #populate hash with key value pairs
 #check if the hask already contains key of a particuar genre
 #if it has increment key by 1, if not create a new key value pair
-binding.pry
 genre_count = {}
 @@genres.each do |genre|
 genre_count[genre] = @@genres.count
