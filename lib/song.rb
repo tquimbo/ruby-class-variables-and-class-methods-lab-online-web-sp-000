@@ -12,7 +12,9 @@ def initialize(name, artist, genre)
 self.name = name
 self.genre = genre
 self.artist = artist
+unless genres.include?(genre)
 @@genres << genre
+unless artists.include?(artist)
 @@artists << artist
 end
 
@@ -21,16 +23,11 @@ return @@count
 end
 
 def self.genres
-@genre = genre
-unless genres.include?(genres)
-  @@genres << genre
+
 return @@genres
 end
 
 def self.artists
-@artist = artist
-unless artists.include?(artist)
-  @@artists << artist
 return @@artists
 end
 
