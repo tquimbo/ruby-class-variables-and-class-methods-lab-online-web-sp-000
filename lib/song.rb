@@ -12,9 +12,9 @@ def initialize(name, artist, genre)
 self.name = name
 self.genre = genre
 self.artist = artist
-unless genres.include?(genre)
+unless @@genres.include?(genre)
 @@genres << genre
-unless artists.include?(artist)
+unless @@artists.include?(artist)
 @@artists << artist
 end
 
