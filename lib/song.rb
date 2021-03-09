@@ -40,6 +40,7 @@ genre_count = {}
 @@genres.each do |genre|
 binding.pry
 if genre_count[genre]
+  return genre_count[genre] = genre.count
 end
 end
 return genre_count
