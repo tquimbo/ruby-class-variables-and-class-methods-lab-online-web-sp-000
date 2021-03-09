@@ -38,7 +38,7 @@ def self.genre_count
 #if it has increment key by 1, if not create a new key value pair
 genre_count = {}
 @@genres.each do |genre|
-# binding.pry
+binding.pry
 if genre_count.include?(genre)
 end
 end
