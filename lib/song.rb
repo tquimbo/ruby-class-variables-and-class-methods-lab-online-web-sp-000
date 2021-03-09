@@ -21,13 +21,14 @@ return @@count
 end
 
 def self.genres
-
+@genre = genre
 unless genres.include?(genres)
   @@genres << genre
 return @@genres
 end
 
 def self.artists
+@artist = artist
 unless artists.include?(artist)
   @@artists << artist
 return @@artists
