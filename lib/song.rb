@@ -41,6 +41,7 @@ genre_count = {}
 # binding.pry
 if genre_count.include?(genre)
 end
+end
 return genre_count
 end
 
